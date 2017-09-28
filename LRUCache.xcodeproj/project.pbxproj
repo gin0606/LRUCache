@@ -10,6 +10,7 @@
 		7D5DCF161F7D24D0008B43D0 /* LRUCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5DCF0C1F7D24D0008B43D0 /* LRUCache.framework */; };
 		7D5DCF1B1F7D24D0008B43D0 /* LRUCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5DCF1A1F7D24D0008B43D0 /* LRUCacheTests.swift */; };
 		7D5DCF1D1F7D24D0008B43D0 /* LRUCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D5DCF0F1F7D24D0008B43D0 /* LRUCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D5DCF271F7D254B008B43D0 /* CacheInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5DCF261F7D254B008B43D0 /* CacheInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		7D5DCF151F7D24D0008B43D0 /* LRUCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LRUCacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D5DCF1A1F7D24D0008B43D0 /* LRUCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCacheTests.swift; sourceTree = "<group>"; };
 		7D5DCF1C1F7D24D0008B43D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D5DCF261F7D254B008B43D0 /* CacheInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				7D5DCF0F1F7D24D0008B43D0 /* LRUCache.h */,
 				7D5DCF101F7D24D0008B43D0 /* Info.plist */,
+				7D5DCF261F7D254B008B43D0 /* CacheInterface.swift */,
 			);
 			path = LRUCache;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					7D5DCF0B1F7D24D0008B43D0 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					7D5DCF141F7D24D0008B43D0 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D5DCF271F7D254B008B43D0 /* CacheInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		7D5DCF211F7D24D0008B43D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.gin0606.LRUCache;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +362,7 @@
 		7D5DCF221F7D24D0008B43D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +384,7 @@
 		7D5DCF241F7D24D0008B43D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G89J8GUEJZ;
 				INFOPLIST_FILE = LRUCacheTests/Info.plist;
@@ -390,6 +399,7 @@
 		7D5DCF251F7D24D0008B43D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G89J8GUEJZ;
 				INFOPLIST_FILE = LRUCacheTests/Info.plist;
