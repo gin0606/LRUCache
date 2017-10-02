@@ -13,6 +13,8 @@
 		7D5DCF1D1F7D24D0008B43D0 /* LRUCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D5DCF0F1F7D24D0008B43D0 /* LRUCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D5DCF271F7D254B008B43D0 /* CacheInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5DCF261F7D254B008B43D0 /* CacheInterface.swift */; };
 		7D5DCF2D1F7D4419008B43D0 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5DCF2C1F7D4419008B43D0 /* LinkedList.swift */; };
+		7DA0D8381F7E48380057CF2B /* LRUCacheStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA0D8371F7E48380057CF2B /* LRUCacheStorage.swift */; };
+		7DA0D83A1F7E48D10057CF2B /* LRUCacheStorageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA0D8391F7E48D10057CF2B /* LRUCacheStorageTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		7D5DCF1C1F7D24D0008B43D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D5DCF261F7D254B008B43D0 /* CacheInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheInterface.swift; sourceTree = "<group>"; };
 		7D5DCF2C1F7D4419008B43D0 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		7DA0D8371F7E48380057CF2B /* LRUCacheStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCacheStorage.swift; sourceTree = "<group>"; };
+		7DA0D8391F7E48D10057CF2B /* LRUCacheStorageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCacheStorageTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 				7D5DCF101F7D24D0008B43D0 /* Info.plist */,
 				7D5DCF261F7D254B008B43D0 /* CacheInterface.swift */,
 				7D5DCF2C1F7D4419008B43D0 /* LinkedList.swift */,
+				7DA0D8371F7E48380057CF2B /* LRUCacheStorage.swift */,
 			);
 			path = LRUCache;
 			sourceTree = "<group>";
@@ -91,6 +96,7 @@
 				7D5DCF1A1F7D24D0008B43D0 /* LRUCacheTests.swift */,
 				7D5DCF1C1F7D24D0008B43D0 /* Info.plist */,
 				7D5535721F7D7210008419C7 /* LinkedListTests.swift */,
+				7DA0D8391F7E48D10057CF2B /* LRUCacheStorageTest.swift */,
 			);
 			path = LRUCacheTests;
 			sourceTree = "<group>";
@@ -224,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DA0D8381F7E48380057CF2B /* LRUCacheStorage.swift in Sources */,
 				7D5DCF2D1F7D4419008B43D0 /* LinkedList.swift in Sources */,
 				7D5DCF271F7D254B008B43D0 /* CacheInterface.swift in Sources */,
 			);
@@ -233,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DA0D83A1F7E48D10057CF2B /* LRUCacheStorageTest.swift in Sources */,
 				7D5535731F7D7210008419C7 /* LinkedListTests.swift in Sources */,
 				7D5DCF1B1F7D24D0008B43D0 /* LRUCacheTests.swift in Sources */,
 			);
