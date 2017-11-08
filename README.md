@@ -1,8 +1,7 @@
 # LRUCache
 thread-safe, in-memory LRU cache
 
-## Installation
-TODO
+某企業選考課題でやったやつ
 
 ## Usage
 ```swift
